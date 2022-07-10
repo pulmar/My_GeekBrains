@@ -20,4 +20,3 @@ _num_employee = int(input("Число сотрудников"))
 _itog_employee = _itog / _num_employee
 print(_itog_employee)
 
-
