@@ -7,4 +7,3 @@ while res < end:
     res += res * 0.1
     day += 1
 print(f"на {day+1}й день спортсмен достиг результата!")
-
