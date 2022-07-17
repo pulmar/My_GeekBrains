@@ -1,9 +1,15 @@
 my_list = [7, 5, 3, 3, 2]
-num = int(input("Введите число"))
-if num in my_list:
-  my_list.index(num)
-  ind = my_list.index(num)
-  my_list.insert(ind, num)
-else:
-  my_list.append(num)
-print(my_list)
+num = ""
+
+while num != "q":
+  i = 0
+  num = input("Введите число")
+
+  if num.isdigit():
+    for n in my_list:
+       if int(num) <= n:
+         i += 1
+       else:
+        break
+    my_list.insert(i, float(num))
+  print(my_list)
